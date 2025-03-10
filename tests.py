@@ -8,7 +8,7 @@ class TestEarthquakeRiskAssessor(unittest.TestCase):
         """Test if we can correctly find state abbreviations from place names."""
         self.assertEqual(extract_state_from_place("10km N of Los Angeles, CA"), "CA")
         self.assertEqual(extract_state_from_place("5km S of Reno, Nevada"), "NV")
-         # although we are excluding Hawaii from the results, this test correcty identifies Hawaii to be able to exclude it 
+         # although we are excluding Hawaii from the results, this test makes sure we can correctly identify Hawaii to be able to exclude it 
         self.assertEqual(extract_state_from_place("20km E of Honolulu, HI"), "HI")
         self.assertIsNone(extract_state_from_place("Somewhere, ?"))
 

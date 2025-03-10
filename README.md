@@ -10,7 +10,8 @@ Aim is to deliver a proof-of-value to the client where we can show we utilise da
 
 ## Requirements 
 
-Python 
+Python  
+
 Python Libraries - requests & geopy (to measure distance between quakes and buildings)
 
 ## Setup
@@ -38,9 +39,12 @@ Install dependancies using `pip install -r requirements.txt`
 - Risk score is calculated by multiplying count and the magnitude. THis is a fairly basic way of calculating risk as many more factors that can be taken into account when deciding insurance risk (building structure, weather etc.)
 
 ## Future Improvements 
-Use long term data / more detailed data to determine risk
-Add a visual element to the logic 
-Better error handling / having a backup data source or using slightly older data 
+Use long term data / more detailed data to determine risk  
+
+Add a visual element to the logic  
+
+Better error handling / having a backup data source or using slightly older data  
+
 If using the 7 day model - have some logic to compare it to historical averages & trends to show if the weekly count is high/ low /abnormal etc. 
 
 ## Credits 
